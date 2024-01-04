@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela</title>
+  <style>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      border: 1px solid red;  
+    }
+
+    .card {
+      width: 150px;
+      margin: 20px auto;
+      background: blue;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .botaoClick {
+      margin: 10px;
+      background: orange;
+      color: blue;
+      border: 0;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .voltar-card {
+      margin: 10px;
+      background: pink;
+      color: blue;
+      border: 0;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      Aprendendo HTML, CSS e JavaScript
+    </div>
+
+    <button class="botaoClick">Clique aqui</button>
+
+    <!-- Desafio -->
+    <button class="voltar-card">Voltar o Card</button>
+  </div>
+
+  <script>
+    const botao = document.querySelector(".botaoClick");
+    const card = document.querySelector(".card");
+
+    //desafio
+    const voltar = document.querySelector(".voltar-card");
+
+    botao.addEventListener("click", function(){
+      card.style.display = "none";      
+    });
+
+    // desafio
+    voltar.addEventListener("click", function() {
+      card.style.display = "block";   
+    })
+
+  </script>
+</body>
+</html>
