@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários e Lista</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        Listagem
+      </h1>
+    </header>
+
+    <aside>
+      <input type="text" placeholder="Procure seu time" list="faixa">
+      <datalist id="faixa">
+        <option value="Santos">Times de SP</option>
+        <option value="Flamengo">Times de RJ</option>
+      </datalist>
+    </aside>
+
+    <main>
+      <section>
+        <details open>
+          <summary>Times de futebol e clique aqui e veja mais</summary>
+          <ul>
+            <li>- Botafogo</li>
+            <li>- Palmeiras</li>
+            <li>- Paulista</li>
+          </ul>
+        </details>
+        <hr>
+        <details>
+          <summary>Listas de Pessoas</summary>
+          <ul>
+            <li>- Fernando</li>
+            <li>- Carlos</li>
+            <li>- Pedro</li>
+          </ul>
+        </details>
+      </section>
+    </main>
+    
+    <footer>
+      <p>@2023 - todos os direitos reservados</p>
+    </footer>
+  </div>
+</body>
+</html>
