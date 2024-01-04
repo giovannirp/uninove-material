@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificar Nota</title>
+</head>
+<body>
+  <div>
+    <label for="nota">Digite a nota do aluno:</label>
+    <input type="text" id="nota" />
+  </div>
+  <button>Verificar nota</button>
+
+  <script>
+    /*
+      O programa vai verificar, se a pessoa vai ter uma válida para ser aprovado(a)
+      Se a nota digitada, for maior que 6, o Aluno vai ser aprovado
+      Senão ele vai ser reprovado
+    */
+   const nota = document.querySelector("#nota");
+   const button = document.querySelector("button");
+
+   button.addEventListener("click", function() {
+    if (nota.value >= 6) {
+      alert("Com essa nota, o Aluno foi aprovado");
+    } else {
+      alert("Com essa nota, o Aluno foi reprovado");
+    }
+
+    nota.value = "";
+    nota.focus();
+   });
+
+   
+  </script>
+</body>
+</html>

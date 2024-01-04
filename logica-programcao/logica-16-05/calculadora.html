@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <style>
+    .container {
+      max-width: 300px;
+      border: 3px solid #1d3964;
+      padding: 20px;
+    }
+
+    label {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #240475;
+      font-weight: bold;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+    #resultado {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 20px;
+    }
+
+    button {
+      border: 3px solid #9a0707;
+      background: #012f79;
+      color: #fff;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Calculadora</h1>
+
+  <div class="container">
+    <div class="form-control">
+      <label for="n1">Primeiro número</label>
+      <input type="text" id="n1" />
+    </div>
+  
+    <div class="form-control">
+      <label for="n2">Segundo número</label>
+      <input type="text" id="n2" />
+    </div>
+    
+    <div id="resultado"></div>
+  
+    <button id="somar">Somar</button>
+    <button id="subtrair">Subtrair</button>
+    <button id="multiplicacao">Multiplicação</button>
+    <button id="divisao">Divisão</button>
+  </div>
+
+  <script>
+    const resultado = document.querySelector("#resultado");
+    const numero1 = document.querySelector("#n1");
+    const numero2 = document.querySelector("#n2");
+
+    const somar = document.querySelector("#somar");
+    const subtrar = document.querySelector("#subtrair");
+    const multiplicacao = document.querySelector("#multiplicacao");
+    const divisao = document.querySelector("#divisao");
+
+    somar.addEventListener("click", function() {
+      resultado.innerHTML = Number(numero1.value) + Number(numero2.value);
+    });
+
+    subtrar.addEventListener("click", function() {
+      resultado.innerHTML = numero1.value - numero2.value;
+    });
+
+    multiplicacao.addEventListener("click", function() {
+      resultado.innerHTML = numero1.value * numero2.value;
+    });
+
+    divisao.addEventListener("click", function() {
+      resultado.innerHTML = numero1.value / numero2.value;
+    });
+
+  </script>
+</body>
+</html>
