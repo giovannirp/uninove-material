@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(162, 158, 158);
+}
+
+.containerLogin {
+  max-width: 280px;
+  border: 2px solid rgb(4, 32, 75);
+  margin: 100px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(84, 82, 82);
+}
+
+section {
+  margin: 15px;
+}
+
+.button-m {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-weight: bold;
+  color: rgb(39, 2, 72);
+}
+
+input {
+  border: 1px solid rgb(88, 86, 86);
+  padding: 5px;
+  border-radius: 5px;
+  color: blueviolet;
+}
+
+.btn-entrar {
+  background: rgb(96, 2, 2);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+}

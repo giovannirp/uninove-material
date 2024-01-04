@@ -1,0 +1,22 @@
+* {
+  /* reset do meu CSS */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: rgb(44, 198, 80);
+}
+
+.container {
+  background: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.lista-times h2, .lista-compras h3 {
+  font-size: 20px;
+  color: rgb(32, 7, 147);
+}

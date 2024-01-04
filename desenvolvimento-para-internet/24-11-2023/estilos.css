@@ -1,0 +1,13 @@
+body {
+  background: url("./foto.jpg") no-repeat center;
+  background-size: cover;
+}
+
+h1 {
+font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Roboto';
+  font-weight: 800;
+} 
